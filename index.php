@@ -13,7 +13,7 @@ ini_set('display_errors', 1);
 // var_dump($city_mall);
 // echo $city_mall->countPrice();
 $residential_house = new ResidentialHouseBuilding('Pobeda', 'Kharkov', 400);
-// $residential_house->hashtagName();
-echo $residential_house->countWaterPrice();
+$residential_house->hashtagName();
+// echo $residential_house->countWaterPrice();
 
  ?>
