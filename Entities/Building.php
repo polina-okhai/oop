@@ -1,18 +1,16 @@
 <?php
 class Building {
-  protected $name = 'Polina';
-  private $surname = 'Okhai';
+protected $name;
+private $city;
 
-  public function fullName() {
-  echo "{$this->name} {$this->surname} {$this->randomNumber()} {$this->randomLetter()}";
+  public function __construct($name, $city){
+    $this->name = $name;
+    $this->city = $city;
   }
 
-  protected function randomNumber() {
-    return rand(100, 999);
+  public function hashtagName() {
+    echo"#{$this->name}, {$this->city}";
   }
 
-  private function randomLetter() {
-    return chr(rand(65, 90));
-  }
 }
  ?>
